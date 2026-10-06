@@ -11,6 +11,7 @@
   "dependencies": {
     "@google/genai": "^2.24.0",
     "dotenv": "^18.0.3",
+    "dream-catcher-root": "file:..",
     "express": "^4.18.2",
     "helmet": "^8.1.0",
     "openai": "^4.52.0",
