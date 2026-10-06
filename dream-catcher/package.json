@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "postinstall": "node -e \"const {spawnSync}=require('child_process'); const npmCmd = process.platform === 'win32' ? 'npm.cmd' : 'npm'; const result = spawnSync(npmCmd, ['rebuild', 'sqlite3', '--build-from-source'], { stdio: 'inherit' }); process.exit(result.status ?? 0);\""
   },
   "dependencies": {
     "@google/genai": "^2.24.0",
@@ -16,7 +17,7 @@
     "openai": "^4.52.0",
     "react": "^19.2.4",
     "sqlite": "^5.1.1",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
