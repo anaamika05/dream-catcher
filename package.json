@@ -1,9 +1,0 @@
-{
-  "name": "dream-catcher-root",
-  "private": true,
-  "scripts": {
-    "install:app": "npm --prefix dream-catcher install",
-    "start": "npm --prefix dream-catcher run start",
-    "dev": "npm --prefix dream-catcher run dev"
-  }
-}
